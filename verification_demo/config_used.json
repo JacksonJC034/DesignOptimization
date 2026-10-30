@@ -1,0 +1,91 @@
+{
+  "case_name": "DEMO ONLY - synthetic motion, not validated sit/stand",
+  "duration_s": 4.0,
+  "samples": 201,
+  "start_q": {
+    "leg_joint_1": 0.0,
+    "left_wheel_rotate_joint": 0.0,
+    "right_wheel_rotate_joint": 0.0,
+    "leg_joint_2": 0.0,
+    "left_wheel_drive_joint": 0.0,
+    "right_wheel_drive_joint": 0.0,
+    "leg_joint_3": 0.0,
+    "waist": 0.0,
+    "neck_yaw": 0.0,
+    "left_arm_joint_1": 0.0,
+    "right_arm_joint_1": 0.0,
+    "neck_pitch": 0.0,
+    "left_arm_joint_2": 0.0,
+    "right_arm_joint_2": 0.0,
+    "left_arm_joint_3": 0.0,
+    "right_arm_joint_3": 0.0,
+    "left_arm_joint_4": 0.0,
+    "right_arm_joint_4": 0.0,
+    "left_arm_joint_5": 0.0,
+    "right_arm_joint_5": 0.0,
+    "left_arm_joint_6": 0.0,
+    "right_arm_joint_6": 0.0,
+    "left_arm_joint_7": 0.0,
+    "right_arm_joint_7": 0.0
+  },
+  "end_q": {
+    "leg_joint_1": 0.3,
+    "left_wheel_rotate_joint": 0.0,
+    "right_wheel_rotate_joint": 0.0,
+    "leg_joint_2": -0.6,
+    "left_wheel_drive_joint": 0.0,
+    "right_wheel_drive_joint": 0.0,
+    "leg_joint_3": 0.3,
+    "waist": 0.0,
+    "neck_yaw": 0.0,
+    "left_arm_joint_1": 0.0,
+    "right_arm_joint_1": 0.0,
+    "neck_pitch": 0.0,
+    "left_arm_joint_2": 0.0,
+    "right_arm_joint_2": 0.0,
+    "left_arm_joint_3": 0.0,
+    "right_arm_joint_3": 0.0,
+    "left_arm_joint_4": 0.0,
+    "right_arm_joint_4": 0.0,
+    "left_arm_joint_5": 0.0,
+    "right_arm_joint_5": 0.0,
+    "left_arm_joint_6": 0.0,
+    "right_arm_joint_6": 0.0,
+    "left_arm_joint_7": 0.0,
+    "right_arm_joint_7": 0.0
+  },
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.80665
+  ],
+  "payloads": [
+    {
+      "link": "left_arm_link_7",
+      "mass_kg": 3,
+      "com_xyz_m": [
+        0.1,
+        0,
+        0
+      ]
+    }
+  ],
+  "monitor_links": [
+    "torso",
+    "left_arm_link_7",
+    "right_arm_link_7"
+  ],
+  "support_polygon_xy_m": null,
+  "support_margin_m": 0.0,
+  "capacity_overrides": {},
+  "notes": [
+    "Angles in radians; prismatic joints in metres.",
+    "Set real sit/stand start_q and end_q. All joints must be specified.",
+    "payloads: [{\"link\":\"left_arm_link_7\",\"mass_kg\":3,\"com_xyz_m\":[0,0,0]}]",
+    "Payload COM is relative to link frame, not an assumed tool frame.",
+    "Support polygon: actual convex contact region in root XY, CCW or CW.",
+    "Do not infer a support polygon from wheel joint centres.",
+    "capacity_overrides: joint -> {effort: positive number, velocity: positive number}.",
+    "Overrides are constant screening bounds, not full torque-speed/thermal curves."
+  ]
+}

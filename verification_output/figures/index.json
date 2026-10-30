@@ -1,0 +1,29 @@
+{
+  "joints": [
+    "leg_joint_1",
+    "left_wheel_rotate_joint",
+    "right_wheel_rotate_joint",
+    "leg_joint_2",
+    "left_wheel_drive_joint",
+    "right_wheel_drive_joint",
+    "leg_joint_3",
+    "waist",
+    "neck_yaw",
+    "left_arm_joint_1",
+    "right_arm_joint_1",
+    "neck_pitch",
+    "left_arm_joint_2",
+    "right_arm_joint_2",
+    "left_arm_joint_3",
+    "right_arm_joint_3",
+    "left_arm_joint_4",
+    "right_arm_joint_4",
+    "left_arm_joint_5",
+    "right_arm_joint_5",
+    "left_arm_joint_6",
+    "right_arm_joint_6",
+    "left_arm_joint_7",
+    "right_arm_joint_7"
+  ],
+  "description": "joint_NN_* uses zero-based order in joints; SVG plots use seconds on X"
+}
